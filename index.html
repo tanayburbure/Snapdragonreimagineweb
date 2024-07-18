@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+        " rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!-- Loader -->
+    <div class="Loader hidden">
+        <video class="relative z-0 max-w-screen mx-auto" autoplay muted loop src="./videos/vid2.mp4"></video>
+        <img class="absolute z-50 -top-10" src="./images/Logo Snapdragon.png" alt="">
+    </div>
+    <div id="main"> 
+    <div class="navbar flex relative items-center justify-between h-20 bg-zinc-200">
+        <div class="start">
+            <img class="h-[10vw] w-[18vw] px-16" src="./images/lobo.webp" alt="">
+        </div>
+        <div class="middle flex text-[1.6vw] gap-8 relative text-black left-[-20vw]">
+            <div class="item mt-1"><i class="ri-search-2-line"></i></div>
+            <div class="item px-8 border-x-2 mt-1 h-9 border-zinc-700"><i class="ri-user-line"></i></div>
+            <div class="item mt-1"><i class="ri-instance-fill"></i></div>
+        </div>
+        <div class="end px-20">
+            <button class="flex h-7 font-[font1] font-medium w-24 bg-white text-[1.2vw] rounded-xl flex items-center justify-between px-2 text-black">menu<i class="ri-menu-fold-line font-semibold"></i>
+            </button>
+        </div>
+        <div class="menubar hidden"></div>
+    </div>
+    <!-- page1 -->
+    <div class="page1 h-[100vh] bg-white flex items-center justify-between" data-scroll data-scroll-speed="1">
+        <div class="relative w-[40%]">
+            <img class="absolute object-cover h-[25vw] left-20 -bottom-20" src="https://yt3.googleusercontent.com/mEj4mppkCiiDgtCBjKOAN5AP0PTnsYbKUMqv69TwqAqX6bFUbrQD2xC6I1RAGE-HPLtm-cYOmg=s900-c-k-c0x00ffffff-no-rj" alt="">
+        </div>
+        <img class="bg-center w-[44%] h-[99%] mt-2" src="./images/model.png" alt="">
+    </div>
+    <!-- page2 -->
+    <div id="visual" data-scroll data-scroll-speed="4">
+        <div class="relative" id="top">
+            <h3 class="absolute left-16 top-20 bg-black text-zinc-200 px-4 py-2 rounded-full font-medium text-xl">Featured By</h3>
+            <img class="" src="" alt="">
+            <h1 id="top-h1">SNAPDRAGON</h1>
+        </div>
+        <div id="center">
+            <div class="content">
+                <div class="container">
+                    <div class="image-container" data-video="video.mp4">
+                        <img src="./images/rb2.webp" alt="Image 1">
+                        <video src="video.mp4" muted></video>
+                    </div>
+                    <div class="image-container" data-video="video.mp4">
+                        <img src="./images/manches.png" alt="Image 2">
+                        <video src="video.mp4" muted></video>
+                    </div>
+                    <div class="image-container" data-video="video.mp4">
+                        <img src="./images/oryon.jpeg" alt="Image 3">
+                        <video src="video.mp4" muted></video>
+                    </div>
+                    <div class="image-container" data-video="video.mp4">
+                        <img src="./images/game.jpg" alt="Image 3">
+                        <video src="video.mp4" muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <h1 id="bottom-h1">SNAPDRAGON</h1>
+        </div>
+    </div>
+    <!-- page3 -->
+    <div class="page3 w-full mt-0">
+        <div class="list">
+            <div class="item">
+                <img src="./images/oryon.jpeg" alt="">
+            </div>
+            <div class="item">
+                <img class="brightness-75" src="./images/manches.png" alt="">
+                <div class="content">
+                    <div class="title font-extrabold text-zinc-900 ">SNAPDRAGON x MANCHESTER </div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="object-left" src="./images/rb2.webp" alt="">
+                <div class="content font-[font3]">
+                    <div class="title text-zinc-900">QUALCOMM RB3 Gen 2</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/game.jpg" alt="">
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img  class="object-center" src="./images/oryon.jpeg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/manches.png" alt="">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/rb2.webp" alt="">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="object-center" src="./images/game.jpg" alt="">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <i id="prev"class="ri-arrow-left-fill"></i>
+            <i id="next"class="ri-arrow-right-fill"></i>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+</div>
+<!-- ScrollTrigger     -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- locomotive js-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+        "></script>
+<!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
