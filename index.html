@@ -34,14 +34,14 @@
         <div class="menubar hidden"></div>
     </div>
     <!-- page1 -->
-    <div class="page1 h-[100vh] bg-white flex items-center justify-between" data-scroll data-scroll-speed="1">
+    <div class="page1 h-[100vh] bg-white flex items-center justify-between" data-scroll data-scroll-speed="4">
         <div class="relative w-[40%]">
-            <img class="absolute object-cover h-[25vw] left-20 -bottom-20" src="https://yt3.googleusercontent.com/mEj4mppkCiiDgtCBjKOAN5AP0PTnsYbKUMqv69TwqAqX6bFUbrQD2xC6I1RAGE-HPLtm-cYOmg=s900-c-k-c0x00ffffff-no-rj" alt="">
+            <img class="absolute object-cover h-[25vw] left-20 -bottom-20" src="./images/SNAPlobo.jpg" alt="">
         </div>
         <img class="bg-center w-[44%] h-[99%] mt-2" src="./images/model.png" alt="">
     </div>
     <!-- page2 -->
-    <div id="visual" data-scroll data-scroll-speed="4">
+    <div id="page2" data-scroll data-scroll-speed="1">
         <div class="relative" id="top">
             <h3 class="absolute left-16 top-20 bg-black text-zinc-200 px-4 py-2 rounded-full font-medium text-xl">Featured By</h3>
             <img class="" src="" alt="">
@@ -51,19 +51,19 @@
             <div class="content">
                 <div class="container">
                     <div class="image-container" data-video="video.mp4">
-                        <img src="./images/rb2.webp" alt="Image 1">
+                        <img src="./images/game.png" alt="Image 1">
                         <video src="video.mp4" muted></video>
                     </div>
                     <div class="image-container" data-video="video.mp4">
-                        <img src="./images/manches.png" alt="Image 2">
+                        <img src="./images/oryon.jpeg" alt="Image 2">
                         <video src="video.mp4" muted></video>
                     </div>
                     <div class="image-container" data-video="video.mp4">
-                        <img src="./images/oryon.jpeg" alt="Image 3">
+                        <img src="./images/rb2.webp" alt="Image 3">
                         <video src="video.mp4" muted></video>
                     </div>
                     <div class="image-container" data-video="video.mp4">
-                        <img src="./images/game.jpg" alt="Image 3">
+                        <img src="./images/model.png" alt="Image 3">
                         <video src="video.mp4" muted></video>
                     </div>
                 </div>
@@ -74,86 +74,68 @@
         </div>
     </div>
     <!-- page3 -->
-    <div class="page3 w-full mt-0">
-        <div class="list">
-            <div class="item">
-                <img src="./images/oryon.jpeg" alt="">
-            </div>
-            <div class="item">
-                <img class="brightness-75" src="./images/manches.png" alt="">
-                <div class="content">
-                    <div class="title font-extrabold text-zinc-900 ">SNAPDRAGON x MANCHESTER </div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="object-left" src="./images/rb2.webp" alt="">
-                <div class="content font-[font3]">
-                    <div class="title text-zinc-900">QUALCOMM RB3 Gen 2</div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./images/game.jpg" alt="">
-            </div>
-        </div>
-        <div class="thumbnail">
-            <div class="item">
-                <img  class="object-center" src="./images/oryon.jpeg" alt="">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./images/manches.png" alt="">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./images/rb2.webp" alt="">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="object-center" src="./images/game.jpg" alt="">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- next prev -->
-
-        <div class="arrows">
-            <i id="prev"class="ri-arrow-left-fill"></i>
-            <i id="next"class="ri-arrow-right-fill"></i>
-        </div>
-        <!-- time running -->
-        <div class="time"></div>
+    <div class="slide-bg">
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
     </div>
 
-</div>
-<!-- ScrollTrigger     -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- locomotive js-->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
-        "></script>
-<!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="slider">
+        <div class="slider-img">
+            <div class="item">
+                <img src="./images/gamepad.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/AIrobot.png" alt="">
+            </div>
+            <div class="item">
+                <img class="brightness-125 opacity-100" src="./images/AR.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/processor.png" alt="">
+            </div>
+        </div>
+        <div class="page3">
+            <div class="content-info">
+                <div class="info">
+                    <h2>Gaming x Snapdragon</h2>
+                    <p>Lorem ipsum dolor sit  elit. Error vel ea suscipit magnam, hic dicta rerum cupiditate voluptatem maxime doloribus molestias possimus cum earum consectetur corrupti, perspiciatis, animi voluptas laudantium?</p>
+                </div>
+                <div class="info mt-32">
+                    <h2>Qualcomm Robotics</h2>
+                    <p>Lorem ipsum dolor sit  elit. Error vel ea suscipit magnam, hic dicta rerum cupiditate voluptatem maxime doloribus molestias possimus cum earum consectetur corrupti, perspiciatis, animi voluptas laudantium?</p>
+                </div>
+                <div class="info mt-32">
+                    <h2>Augmented Reality</h2>
+                    <p>Lorem ipsum dolor sit  elit. Error vel ea suscipit magnam, hic dicta rerum cupiditate voluptatem maxime doloribus molestias possimus cum earum consectetur corrupti, perspiciatis, animi voluptas laudantium?</p>
+                </div>
+                <div class="info mt-28">
+                    <h2>QUALCOMM ORYON</h2>
+                    <p>Lorem ipsum dolor sit  elit. Error vel ea suscipit magnam, hic dicta rerum cupiditate voluptatem maxime doloribus molestias possimus cum earum consectetur corrupti, perspiciatis, animi voluptas laudantium?</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="arrows">
+        <span class="prev-btn"><i class="ri-arrow-left-fill"></i></span>
+        <span class="next-btn"><i class="ri-arrow-right-fill"></i></span>
+    </div>
+
+
+</div>
+<!-- LOCOMOTIVE JS -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- GSAP SCROLLTRIGGER -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>

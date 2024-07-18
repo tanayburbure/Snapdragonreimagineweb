@@ -19,88 +19,61 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-function DomAnimation() {
-    let nextDom = document.getElementById('next');
-    let prevDom = document.getElementById('prev');
-    
-    let page3Dom = document.querySelector('.page3');
-    let SliderDom = page3Dom.querySelector('.page3 .list');
-    let thumbnailBorderDom = document.querySelector('.page3 .thumbnail');
-    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-    let timeDom = document.querySelector('.page3 .time');
-    
-    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-    let timeRunning = 3000;
-    let timeAutoNext = 4000;
-    
-    nextDom.onclick = function(){
-        showSlider('next');    
-    }
-    
-    prevDom.onclick = function(){
-        showSlider('prev');    
-    }
-    let runTimeOut;
-    let runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext)
-    function showSlider(type){
-        let  SliderItemsDom = SliderDom.querySelectorAll('.page3 .list .item');
-        let thumbnailItemsDom = document.querySelectorAll('.page3 .thumbnail .item');
-        
-        if(type === 'next'){
-            SliderDom.appendChild(SliderItemsDom[0]);
-            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-            page3Dom.classList.add('next');
-        }else{
-            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-            thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-            page3Dom.classList.add('prev');
-        }
-        clearTimeout(runTimeOut);
-        runTimeOut = setTimeout(() => {
-            page3Dom.classList.remove('next');
-            page3Dom.classList.remove('prev');
-        }, timeRunning);
-    
-        clearTimeout(runNextAuto);
-        runNextAuto = setTimeout(() => {
-            next.click();
-        }, timeAutoNext)
-    }
+function features(){
+  var tl = gsap.timeline({scrollTrigger:{
+    trigger: "#page2",
+    scroller: "#main",
+    //  markers:true,
+     start:"50% 50%",
+     end:"150% 50%",
+     scrub:2,
+     pin:true
+  }});
+  tl
+  .to("#center",{
+    height: "100vh",
+  },'a')
+  .to("#top",{
+     top: "-50%",
+  },'a')
+  .to("#bottom",{
+     bottom: "-52%",
+  },'a')
+  .to("#top-h1",{
+     top: "60%"
+  },'a')
+  .to("#bottom-h1",{
+     bottom: "-30%"
+  },'a')
+  .to("#center-h1",{
+    top: "-30%"
+  },'a')
+  .to(".content",{
+    delay: -0.2,
+    marginTop: "0%"
+  })
 }
-function FeatureAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{
-       trigger:"#visual",
-      //  markers:true,
-       start:"50% 50%",
-       end:"150% 50%",
-       scrub:2,
-       pin:true
-    }});
-    tl
-    .to("#center",{
-      height: "100vh",
-    },'a')
-    .to("#top",{
-       top: "-50%",
-    },'a')
-    .to("#bottom",{
-       bottom: "-56%",
-    },'a')
-    .to("#top-h1",{
-       top: "60%"
-    },'a')
-    .to("#bottom-h1",{
-       bottom: "-30%"
-    },'a')
-    .to("#center-h1",{
-      top: "-30%"
-    },'a')
-    .to(".content",{
-      delay: -0.2,
-      marginTop: "0%"
-    })
+function DomAnimation() {
+const listInfo = document.querySelector('.content-info');
+const nextBtn = document.querySelector('.next-btn');
+const listImg = document.querySelector('.slider-img');
+const prevBtn = document.querySelector('.prev-btn');
+const bgs = document.querySelectorAll('.bg');
+
+let index = 0;
+nextBtn.addEventListener('click', () => {
+    index = Math.min(index + 1, 3);
+    listInfo.style.transform = `translateY(${index * -27}%)`;
+    listImg.style.transform = `translateY(${index * -100}%)`;
+    bgs[index].classList.add('active');
+})
+
+prevBtn.addEventListener('click', () => {
+    index = Math.max(index - 1, 0);
+    listInfo.style.transform = `translateY(${index * -27}%)`;
+    listImg.style.transform = `translateY(${index * -100}%)`;
+    bgs[index + 1].classList.remove('active');
+})
 }
 function CardFeature() {document.querySelectorAll('.image-container').forEach(container => {
     const video = container.querySelector('video');
@@ -122,6 +95,6 @@ function CardFeature() {document.querySelectorAll('.image-container').forEach(co
 }
 
 locomotiveanimation()
+features();
 DomAnimation()
-FeatureAnimation();
 CardFeature();
