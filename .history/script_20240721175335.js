@@ -50,26 +50,6 @@ tl.from("#line-part1", {
     duration: 0.6,
     display: "none",
   });
-  tl.from(".page1",{
-    delay:0.4,
-    y:1600,
-    opacity:0,
-    ease:Power4
-});
-tl.to(".Loader",{
-    display:"none"
-})
-tl.from(".navbar",{
-    y:160,
-    stagger:0.2,
-    color: "#103289",
-})
-tl.from(".navbar",{
-    opacity:0
-})
-tl.from(".new",{
-    opacity:0
-},"-=3")
 }
 function locomotiveanimation() {
   gsap.registerPlugin(ScrollTrigger);
@@ -316,3 +296,21 @@ Snapdragonanimation();
 DomAnimation();
 page5animation();
 Boxanimation();
+
+// Define the loader duration in milliseconds (e.g., 3 seconds)
+const loaderDuration = 5000; // 3000 milliseconds = 3 seconds
+
+// Function to hide the loader and show the main content
+function showContent() {
+    const loader = document.getElementById('Loader');
+    const mainContent = document.querySelector('.navbar');
+
+    // Hide the loader
+    loader.style.display = 'none';
+
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Set a timeout to call showContent function after loaderDuration
+setTimeout(showContent, loaderDuration);

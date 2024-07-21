@@ -50,26 +50,6 @@ tl.from("#line-part1", {
     duration: 0.6,
     display: "none",
   });
-  tl.from(".page1",{
-    delay:0.4,
-    y:1600,
-    opacity:0,
-    ease:Power4
-});
-tl.to(".Loader",{
-    display:"none"
-})
-tl.from(".navbar",{
-    y:160,
-    stagger:0.2,
-    color: "#103289",
-})
-tl.from(".navbar",{
-    opacity:0
-})
-tl.from(".new",{
-    opacity:0
-},"-=3")
 }
 function locomotiveanimation() {
   gsap.registerPlugin(ScrollTrigger);
@@ -316,3 +296,29 @@ Snapdragonanimation();
 DomAnimation();
 page5animation();
 Boxanimation();
+
+const loaderDuration = 3000; // 3000 milliseconds = 3 seconds
+        const fadeDuration = 1000;   // 1000 milliseconds = 1 second
+
+        // Function to hide the loader and show the main content
+        function showContent() {
+            const loader = document.querySelector('.loader');
+            const mainContent = document.querySelector('.main-content');
+
+            // Fade out the loader
+            loader.style.transition = `opacity ${fadeDuration / 1000}s ease-out`;
+            loader.style.opacity = '0';
+
+            // Wait for the fade-out animation to complete
+            setTimeout(() => {
+                loader.style.display = 'none'; // Remove loader from view
+
+                // Fade in the main content
+                mainContent.style.transition = `opacity ${fadeDuration / 1000}s ease-in`;
+                mainContent.style.opacity = '1';
+            }, fadeDuration); // Match this duration with the fade effect duration
+        }
+
+        // Set a timeout to call showContent function after loaderDuration
+        setTimeout(showContent, loaderDuration);
+   

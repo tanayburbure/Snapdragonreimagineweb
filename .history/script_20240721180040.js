@@ -47,7 +47,7 @@ tl.from("#line-part1", {
   tl.to(".Loader", {
     opacity: 0,
     delay: 0.1,
-    duration: 0.6,
+    duration: 0.5,
     display: "none",
   });
   tl.from(".page1",{
@@ -61,8 +61,7 @@ tl.to(".Loader",{
 })
 tl.from(".navbar",{
     y:160,
-    stagger:0.2,
-    color: "#103289",
+    stagger:0.2
 })
 tl.from(".navbar",{
     opacity:0

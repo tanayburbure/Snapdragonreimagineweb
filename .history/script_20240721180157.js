@@ -62,7 +62,7 @@ tl.to(".Loader",{
 tl.from(".navbar",{
     y:160,
     stagger:0.2,
-    color: "#103289",
+    color: "#FFFFFF",
 })
 tl.from(".navbar",{
     opacity:0

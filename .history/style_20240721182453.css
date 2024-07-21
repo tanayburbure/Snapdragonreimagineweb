@@ -96,7 +96,7 @@ body {
 
 /* menubar */
 .navbar {
-  background: linear-gradient(to right,  #a6d5f192,#ffffffae);
+  background: linear-gradient(to right,  #a6acf192,#ffffffae);
 
 }
 .navbar i {
@@ -108,11 +108,10 @@ body {
   height: 100vh;
   width: 40vw;
   position: absolute;
-  background:linear-gradient(to right,  #ffffff38, #eea0a093);
+  background:linear-gradient(to right,  #a6acf138, #eea0a045);
   z-index: 10;
   top: 0;
   right: -40%;
-  text-align: right;
   backdrop-filter: blur(px);
   padding: 150px 40px;
 }
@@ -121,7 +120,6 @@ body {
   color: rgba(0, 0, 0, 0.881);
   font-weight: 500;
   margin-bottom: 3px;
-  padding-right: 5vh;
 }
 #slide i {
   position: absolute;

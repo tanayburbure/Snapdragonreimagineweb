@@ -51,7 +51,7 @@ tl.from("#line-part1", {
     display: "none",
   });
   tl.from(".page1",{
-    delay:0.4,
+    delay:0.3,
     y:1600,
     opacity:0,
     ease:Power4
@@ -59,15 +59,14 @@ tl.from("#line-part1", {
 tl.to(".Loader",{
     display:"none"
 })
-tl.from(".navbar",{
+tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero3 h3,#hero4 h1",{
     y:160,
-    stagger:0.2,
-    color: "#103289",
+    stagger:0.2
 })
-tl.from(".navbar",{
+tl.from("#nav",{
     opacity:0
 })
-tl.from(".new",{
+tl.from(".hero ,#page2",{
     opacity:0
 },"-=3")
 }
