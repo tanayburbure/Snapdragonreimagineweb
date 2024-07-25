@@ -242,7 +242,7 @@ function page5animation() {
       trigger: "#page5",
       scroller: "#main",
       // markers:true,
-      start: "top 112.1%",
+      start: "top 111.9%",
       end: "top 0%",
       scrub: 1,
       pin: true,

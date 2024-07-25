@@ -658,17 +658,16 @@ body {
 }
 #left-bottom h1 {
   color: grey;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   margin-top: 0vw;
   margin-bottom: 3vw;
   font-weight: 600;
-  font-family: font2;
+  font-family: font1;
 }
 #left-bottom a {
   color: grey;
   text-decoration: none;
-  font-size: 2.2vh;
-  font-family: font7;
+  font-size: 2vh;
 }
 
 #right {
@@ -678,16 +677,14 @@ body {
 }
 #right h1 {
   color: grey;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   margin-top: 0vw;
   margin-bottom: 3vw;
   font-weight: 600;
-  font-family: font2;
 }
 #right a {
   color: grey;
   text-decoration: none;
-  font-size: 2.2vh;
-  font-family: font7;
+  font-size: 2vh;
   font-weight: 100;
 }

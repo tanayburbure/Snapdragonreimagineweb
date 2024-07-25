@@ -411,10 +411,9 @@ body {
 }
 .image-container h3{
   width: 100%;
-  font-size: 3vw;
+  font-size: 2.8vw;
   line-height: 3.2vw;
-  padding-top: 2vh;
-  font-family: font3;
+  padding-top: 1vh;
 }
 .image-container img {
   width: 100%;
@@ -519,9 +518,6 @@ body {
   margin-top: 4px;
   font-size: 0.875rem;
   font-family: "RobotoFlex-VariableFont", sans-serif;
-}
-.page4>h2{
-  font-family: font2;
 }
 /* page5 */
 
@@ -646,6 +642,8 @@ body {
 
 .ic:hover {
   background-color: rgb(207, 200, 200);
+  width: 25%;
+  height: 100%;
 }
 #icons .ic i {
   font-size: 1.5em;
@@ -658,17 +656,15 @@ body {
 }
 #left-bottom h1 {
   color: grey;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   margin-top: 0vw;
   margin-bottom: 3vw;
   font-weight: 600;
-  font-family: font2;
 }
 #left-bottom a {
   color: grey;
   text-decoration: none;
-  font-size: 2.2vh;
-  font-family: font7;
+  font-size: 2vh;
 }
 
 #right {
@@ -678,16 +674,14 @@ body {
 }
 #right h1 {
   color: grey;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   margin-top: 0vw;
   margin-bottom: 3vw;
   font-weight: 600;
-  font-family: font2;
 }
 #right a {
   color: grey;
   text-decoration: none;
-  font-size: 2.2vh;
-  font-family: font7;
+  font-size: 2vh;
   font-weight: 100;
 }
